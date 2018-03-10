@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title> Organisation Form</title>
+
+<style>
+
+body {
+  background-color: #B67721;
+  color: #FFF8DC;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size: .9em;
+}
+fieldset {
+  position: relative;
+  margin: 15px 0 15px 0;
+  padding: 25px 0;
+  border: 1px solid #7F5417;
+}
+legend {
+  position: absolute;
+  top: -11px;
+  left: 8px;
+  background-color: #7F171F;
+  border: 1px solid #9F393F;
+  padding: 3px;
+}
+label {
+  display: block;
+  float: left;
+  width: 193px;
+  text-align: right;
+  padding-right: 7px;
+  margin-bottom: 7px;
+}
+br {
+  clear: both;
+}
+.text {
+  border: 1px solid #177F75;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.submit {
+  margin-left: 201px;
+  background-color: #00CC00;
+}
+.text, select {
+  display: block;
+  float: left;
+  margin-bottom: 7px;
+}
+
+
+input[type="text"] {
+  border: 1px solid #177F75;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+input[type="submit"]{
+  margin-left: 201px;
+  background-color: #00CC00;
+}
+input[type="text"], select {
+  display: block;
+  float: left;
+  margin-bottom: 7px;
+}
+
+label[for="byear"], label[for="bdate"] {
+  position: absolute;
+  left: -999px;
+  width: 990px;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<h1>Organisation sign up</h1>
+<hr><br>
+
+
+
+
+<form action="script.php" method="get">
+  
+  <fieldset>
+  <legend>Personal Information</legend>
+<br> <br> <br> <br>
+
+<label for="fname">First Name:</label>
+  <input class="text" type="text" name="fname" value="" size="" />
+
+  <label for="lname">Last Name:</label>
+  <input class="text" type="text" name="lname" value="" size="" />
+
+<br> <br>
+
+  <label for="gender">Sex:</label>
+  <input  type="radio" name="gender" value="male" />
+  Male
+  <input  type="radio" name="gender" value="male" />
+  Female 
+
+<br> <br>
+
+  <label for="bmonth">Birthday:</label>
+  <select name="bmonth">
+    <option value="">Month:</option>
+    <option value="1">Jan</option>
+    
+    ...
+</select>
+  <label for="bdate">Birth date:</label>
+  <select name="bdate">
+    <option value="">Date:</option>
+    
+    ...
+  </select>
+
+  <label for="byear">Birth year:</label>
+  <select name="byear" >
+    <option value="">Year:</option>
+    <option value="" selected>1975</option>
+    <option value=""></option>
+    
+    ...
+  </select>
+
+<br> <br>  
+
+  <label for="hstate">State:</label>
+  <select name="hstate">
+    <option value="">select...</option>
+    <option value="QC">Quebec</option>
+    <option value="ON" selected>Ontario</option>
+    
+    
+    
+  </select>
+  
+<br> <br>
+
+  <label for="hcountry">Country:</label>
+  <select name="hcountry">
+    <option value="">select...</option>
+    <option value="canada">Canada</option>
+    <option value="usa" selected>United States</option>
+    
+    
+  </select>
+  </fieldset>
+
+
+<br> <br>
+  
+  <fieldset>
+ <legend>Organisation Information</legend>
+
+  <br> <br><br> 
+
+    <label for="type">Type:</label>
+  <input  type="radio" name="type" value="profit" />
+  Profit
+  <input  type="radio" name="type" value="non-profit" />
+  Non-profit
+
+  <br> <br>
+
+  <label for="oname">Organisation name:</label>
+  <input class="text" type="text" name="oname" value="" size="" />
+
+  <br> <br>
+
+  <label for="uname">Username:</label>
+  <input class="text" type="text" name="uname" value="" size="" />
+  
+  <br> <br>
+
+  <label for="upass">Password:</label>
+  <input class="text" type="password" placeholder="Enter Password" name="upass" value="" size="" />
+  
+  <br> <br>
+
+  <label for="upass2">Re-type password:</label>
+  <input class="text" type="password" placeholder="Re-type Password" name="upass2" value="" size="" />
+  
+  <br> <br>
+
+  <label for="uemail">Email address</label>
+  <input class="text" type="text" name="uemail" value="" size="" />
+  
+  <br> <br>
+
+  <label for="cnum">Contact number</label>
+  <input class="text" type="text" name="cnum" value="" size="" />
+
+  
+  <br> <br>
+
+  <input class="submit" type="submit" value="Ceate account" />
+
+  <br><br>
+
+  <span class="psw">Sign up as a <a href="Sform.html"> Student</a></span>
+
+</fieldset>
+</form>
+
+
+
+  </body>
+</html>

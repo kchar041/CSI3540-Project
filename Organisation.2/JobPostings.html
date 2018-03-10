@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Job Postings</title>
+
+<style>
+
+body {
+  background-color: #B67721;
+  color: #FFF8DC;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size: .9em;
+}
+	
+nav {
+    background-color: #fff;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav > ul > li > a {
+    color: #333;
+    background-color:#fff;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+
+
+input[type="text"] {
+  border: 1px solid #177F75;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+input[type="submit"]{
+  margin-left: 201px;
+  background-color: #00CC00;
+}
+input[type="text"] {
+  display: block;
+  float: left;
+  margin-bottom: 7px;
+}
+label {
+  display: block;
+  float: left;
+  width: 193px;
+  text-align: right;
+  padding-right: 7px;
+  margin-bottom: 7px; 
+}
+
+br {
+  clear: both;
+}
+
+	</style>
+</head>
+
+<body>
+
+<h1>Create Postings</h1>
+<hr>
+<div>
+	<nav>
+<ul>
+<li><a href="Postings.html">HOME</a></li>
+<li><a href="Postings.html">CREATE POSTINGS</a></li>
+<li><a href="Edit.html">JOBS</a></li>
+<li><a href="#">VIEW APPLICATIONS</a></li>
+<li><a href="#">CONTACT</a></li>
+</ul>
+	</nav>
+</div>
+
+<br>
+
+<form action="script.php" method="get">
+  
+  <fieldset>
+  <legend>Description</legend>
+<br> 
+
+<textarea type="description" style="width:570px; height:150px" > </textarea>
+
+</fieldset>
+
+<br><br>
+
+<fieldset>
+  <legend>Core Responsibilities</legend>
+<br> 
+
+<textarea type="Core" style="width:570px; height:150px" > </textarea>
+
+</fieldset>
+
+<br><br>
+
+<fieldset>
+  <legend>Required</legend>
+<br> 
+
+<textarea type="Required" style="width:570px; height:150px" > </textarea>
+</fieldset>
+
+<br><br>
+
+<fieldset>
+  <legend>Preferred</legend>
+<br> 
+
+<textarea type="Preferred" style="width:570px; height:150px" > </textarea>
+</fieldset>
+
+<br><br>
+<fieldset>
+
+  <legend>Start Date</legend>
+<br> 
+
+ <label for="bdate">Day:</label>
+  <select name="bdate">
+    <option value="">Date:</option>
+    
+    
+  </select>
+
+Month:
+  <select name="bmonth">
+    <option value="">Month:</option>
+    <option value="1">Jan</option>
+    
+    
+</select>
+
+  Year:
+  <select name="byear" >
+    <option value="">Year:</option>
+    <option value="" selected>1975</option>
+    <option value=""></option>
+    
+    
+  </select>
+
+</fieldset>
+
+<br><br>
+
+<fieldset>
+  <legend>Hours</legend>
+<br> 
+
+
+<label for="monday">Monday:</label>
+<select name="monday" >
+    <option value="" selected>Hours</option>
+    <option value="" >10:00</option>
+    <option value="">12:00</option>
+  </select>
+
+  <select name="am" >
+    <option value="" selected>AM</option>
+    <option value="" >PM</option>
+  </select> 
+
+To 
+
+<select name="fname" >
+    <option value="" selected>Hours</option>
+    <option value="" >10:00</option>
+    <option value="">12:00</option>
+  </select>
+
+  <select name="am" >
+    <option value="" selected>AM</option>
+    <option value="" >PM</option>
+  </select> 
+
+
+<br>
+
+  <label for="lname">Tuesday:</label>
+  <select name="monday" >
+    <option value="" selected>Hours</option>
+    <option value="" >10:00</option>
+    <option value="">12:00</option>
+  </select>
+
+  <select name="am" >
+    <option value="" selected>AM</option>
+    <option value="" >PM</option>
+  </select> 
+
+  To 
+
+<select name="fname" >
+    <option value="" selected>Hours</option>
+    <option value="" >10:00</option>
+    <option value="">12:00</option>
+  </select>
+
+  <select name="am" >
+    <option value="" selected>AM</option>
+    <option value="" >PM</option>
+  </select> 
+
+<br>
+
+  <label for="fname">Wedsnday:</label>
+  <select name="monday" >
+    <option value="" selected>Hours</option>
+    <option value="" >10:00</option>
+    <option value="">12:00</option>
+  </select>
+
+  <select name="am" >
+    <option value="" selected>AM</option>
+    <option value="" >PM</option>
+  </select> 
+
+  To 
+
+<select name="fname" >
+    <option value="" selected>Hours</option>
+    <option value="" >10:00</option>
+    <option value="">12:00</option>
+  </select>
+
+  <select name="am" >
+    <option value="" selected>AM</option>
+    <option value="" >PM</option>
+  </select> 
+
+<br>
+
+  <label for="lname">Thursday:</label>
+  <select name="monday" >
+    <option value="" selected>Hours</option>
+    <option value="" >10:00</option>
+    <option value="">12:00</option>
+  </select>
+
+  <select name="am" >
+    <option value="" selected>AM</option>
+    <option value="" >PM</option>
+  </select> 
+
+  To 
+
+<select name="fname" >
+    <option value="" selected>Hours</option>
+    <option value="" >10:00</option>
+    <option value="">12:00</option>
+  </select>
+
+  <select name="am" >
+    <option value="" selected>AM</option>
+    <option value="" >PM</option>
+  </select> 
+
+<br>
+
+  <label for="fname">Friday:</label>
+  <select name="monday" >
+    <option value="" selected>Hours</option>
+    <option value="" >10:00</option>
+    <option value="">12:00</option>
+  </select>
+
+  <select name="am" >
+    <option value="" selected>AM</option>
+    <option value="" >PM</option>
+  </select> 
+
+  To 
+
+<select name="fname" >
+    <option value="" selected>Hours</option>
+    <option value="" >10:00</option>
+    <option value="">12:00</option>
+  </select>
+
+  <select name="am" >
+    <option value="" selected>AM</option>
+    <option value="" >PM</option>
+  </select> 
+
+<br>
+
+  <label for="lname">Saturday:</label>
+  <select name="monday" >
+    <option value="" selected>Hours</option>
+    <option value="" >10:00</option>
+    <option value="">12:00</option>
+  </select>
+
+  <select name="am" >
+    <option value="" selected>AM</option>
+    <option value="" >PM</option>
+  </select> 
+
+ To 
+
+<select name="fname" >
+    <option value="" selected>Hours</option>
+    <option value="" >10:00</option>
+    <option value="">12:00</option>
+  </select>
+
+  <select name="am" >
+    <option value="" selected>AM</option>
+    <option value="" >PM</option>
+  </select> 
+
+<br>
+
+  <label for="fname">Sunday:</label>
+  <select name="monday" >
+    <option value="" selected>Hours</option>
+    <option value="" >10:00</option>
+    <option value="">12:00</option>
+  </select>
+
+  <select name="am" >
+    <option value="" selected>AM</option>
+    <option value="" >PM</option>
+  </select> 
+
+  To 
+
+<select name="fname" >
+    <option value="" selected>Hours</option>
+    <option value="" >10:00</option>
+    <option value="">12:00</option>
+  </select>
+
+  <select name="am" >
+    <option value="" selected>AM</option>
+    <option value="" >PM</option>
+  </select> 
+
+</fieldset>
+<br>
+<input class="submit" type="submit" value="CREATE!" />
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
